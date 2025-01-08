@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Dashboard</title>
+  <link rel="stylesheet" href="analytics.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="analytics-container">
+    <!-- Header -->
+    <header class="analytics-header">
+      <h1>Analytics Dashboard</h1>
+      <p>Overview of your performance metrics</p>
+    </header>
+
+    <!-- Metrics Section -->
+    <section class="metrics">
+      <div class="metric">
+        <h2>Total Users</h2>
+        <p id="totalUsers">1,234</p>
+      </div>
+      <div class="metric">
+        <h2>Revenue</h2>
+        <p id="revenue">$12,345</p>
+      </div>
+      <div class="metric">
+        <h2>Page Views</h2>
+        <p id="pageViews">45,678</p>
+      </div>
+      <div class="metric">
+        <h2>New Signups</h2>
+        <p id="newSignups">89</p>
+      </div>
+    </section>
+
+    <!-- Chart Section -->
+    <section class="charts">
+      <div class="chart-container">
+        <canvas id="userChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <canvas id="revenueChart"></canvas>
+      </div>
+    </section>
+  </div>
+
+  <script src="analytics.js"></script>
+</body>
+</html>
